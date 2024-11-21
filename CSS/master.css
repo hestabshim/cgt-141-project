@@ -1,0 +1,101 @@
+
+.card {
+    background-color: #e7e6e6;
+    width: 350px;
+    height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+
+.container {
+    height: inherit;
+    width: inherit;
+
+    border-radius: 0px 0px 30px 30px;
+    height: 25%;
+}
+
+.card-set {
+    height: 50%;
+    width: 50%;
+    border-width: thin;
+    border-color: black;
+    border-style: solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+
+/* border-width: thin;
+    border-color: black;
+    border-style: solid;*/
+h4 {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    width: inherit;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.subset {
+    font-size: 12px;
+}
+
+.wrap {
+    overflow: hidden;
+    height: 75%;
+    border-radius: 30px 30px 0px 0px;
+}
+
+header {
+
+    background-color: #c4bfc0
+}
+
+/* efefefe */
+h5 {
+    font-size: 12px;
+}
+
+button {
+    height: 45px;
+    width: 110px;
+    border: none;
+}
+
+body {
+    background-color: #c4bfc0;
+}
+
+#main-body {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    padding: 20px;
+}
+
+#content {
+    Padding-left: 30px;
+    float: left;
+    margin-left: 450px;
+    margin-top: 200px;
+    background: #cfb991;
+    width: 450px;
+    Height: 200px;
+    border-radius: 25px;
+}
+
+#page-container {
+    Width: auto;
+    height: 750px;
+    background-image: url("/images/perusall.png");
+
+}
+
+body {
+    font-family: Georgia, serif;
+    font-size: 18pt;
+}
