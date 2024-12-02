@@ -16,7 +16,7 @@
 }
 
 .card-set {
-    height: 60%;
+    height: 50%;
     width: 50%;
     border-width: thin;
     border-color: black;
@@ -91,11 +91,14 @@ body {
 #page-container {
     Width: auto;
     height: 750px;
-    background-image: url("/images/perusall.png");
-
+    
 }
 
 body {
     font-family: Georgia, serif;
     font-size: 18pt;
+}
+#sidebar {
+    background-color: black;
+    height: 40px;
 }
