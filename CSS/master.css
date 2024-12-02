@@ -88,10 +88,10 @@ body {
     border-radius: 25px;
 }
 
-#page-container {
+.page-container {
     Width: auto;
     height: 750px;
-    
+    background-image: url(../images/perusall.png);
 }
 
 body {
