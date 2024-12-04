@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Event Calendar</title>
+<link rel="stylesheet" href="CSS/master.css" />
+
+
+
+<h2>Tabs</h2>
+<p>Click on the buttons inside the tabbed menu:</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'Calendar')">Calendar</button>
+  <button class="tablinks" onclick="openCity(event, 'Assignments')">Assignments</button>
+  <button class="tablinks" onclick="openCity(event, 'Grades')">Grades</button>
+</div>
+
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Calendar" class="tabcontent">
+  <h3>Calendar</h3>
+  <body></body>
+  <header>Hi.</header>
+  <nav>Hi2.</nav>
+  <section>Hi3.</section>
+  <article>Hi4.</article>
+  <aside>Hi5.</aside>
+  <footer>Hi6.</footer>
+  <p>Paris is the capital of France.</p> 
+  <input type="date" name="appt-date" value="2023-08-23">
+
+</div>
+
+<div id="Assignments" class="tabcontent">
+  <head>
+    <meta charset="UTF-16" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Calendar</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <div class="event-container">
+      <h3 class="year">2020</h3>
+
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">8</div>
+            <div class="month">Nov</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Some Title Here</h3>
+
+          <div class="event-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
+            ratione.
+          </div>
+
+          <div class="event-timing">
+            <img src="images/time.png" alt="" /> 10:00 am
+          </div>
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">22</div>
+            <div class="month">Dec</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Some Title Here</h3>
+
+          <div class="event-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
+            ratione.
+          </div>
+
+          <div class="event-timing">
+            <img src="images/time.png" alt="" /> 10:45 am
+          </div>
+        </div>
+      </div>
+
+      <h3 class="year">2021</h3>
+
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">8</div>
+            <div class="month">Jan</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Some Title Here</h3>
+
+          <div class="event-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
+            ratione.
+          </div>
+
+          <div class="event-timing">
+            <img src="images/time.png" alt="" /> 10:00 am
+          </div>
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">9</div>
+            <div class="month">Mar</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Some Title Here</h3>
+
+          <div class="event-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
+            ratione.
+          </div>
+
+          <div class="event-timing">
+            <img src="images/time.png" alt="" /> 10:30 am
+          </div>
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">4</div>
+            <div class="month">Apr</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Some Title Here</h3>
+
+          <div class="event-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
+            ratione.
+          </div>
+
+          <div class="event-timing">
+            <img src="images/time.png" alt="" /> 10:00 am
+          </div>
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">8</div>
+            <div class="month">Jun</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Some Title Here</h3>
+
+          <div class="event-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
+            ratione.
+          </div>
+
+          <div class="event-timing">
+            <img src="images/time.png" alt="" /> 10:00 am
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Calendar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="event-container">
+      <h3 class="year">2020</h3>
+
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">8</div>
+            <div class="month">Nov</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Some Title Here</h3>
+
+          <div class="event-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
+            ratione.
+          </div>
+
+          <div class="event-timing">
+            <img src="images/time.png" alt="" /> 10:00 am
+          </div>
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">22</div>
+            <div class="month">Dec</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Some Title Here</h3>
+
+          <div class="event-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
+            ratione.
+          </div>
+
+          <div class="event-timing">
+            <img src="images/time.png" alt="" /> 10:45 am
+          </div>
+        </div>
+      </div>
+
+      <h3 class="year">2021</h3>
+
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">8</div>
+            <div class="month">Jan</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Some Title Here</h3>
+
+          <div class="event-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
+            ratione.
+          </div>
+
+          <div class="event-timing">
+            <img src="images/time.png" alt="" /> 10:00 am
+          </div>
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">9</div>
+            <div class="month">Mar</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Some Title Here</h3>
+
+          <div class="event-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
+            ratione.
+          </div>
+
+          <div class="event-timing">
+            <img src="images/time.png" alt="" /> 10:30 am
+          </div>
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">4</div>
+            <div class="month">Apr</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Some Title Here</h3>
+
+          <div class="event-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
+            ratione.
+          </div>
+
+          <div class="event-timing">
+            <img src="images/time.png" alt="" /> 10:00 am
+          </div>
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">8</div>
+            <div class="month">Jun</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Some Title Here</h3>
+
+          <div class="event-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
+            ratione.
+          </div>
+
+          <div class="event-timing">
+            <img src="images/time.png" alt="" /> 10:00 am
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+</div>
+
+<div id="Grades" class="tabcontent">
+    <h4>Grades</h4>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+
+  <div id="Grades" class="tabcontent">
+    <h5>Grades</h5>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+
+<p id="demo"></p>
+
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 

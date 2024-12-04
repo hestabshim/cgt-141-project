@@ -1,14 +1,13 @@
 <?php
-$fname = $fpass = "";
+$name="username";
+$pass="password";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $fname = test_input($_POST["fname"]);
-  $fpass = test_input($_POST["fpass"]);
-}
 
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
+    $name = htmlspecialchars($_REQUEST['username']);
+    if (empty($name)) {
+        echo "Submit a name";
+    } else {
+        header('Location: http://165.227.98.100/classes.html');
+    }
 }
