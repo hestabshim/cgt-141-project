@@ -10,7 +10,7 @@ if ($conn->connect_error) {
 }
 echo "Connected successfully" . "<br>";
 
-echo $username . $password;
+// echo $username . $password;
 
 $sql = "SELECT * FROM user_info";
 
