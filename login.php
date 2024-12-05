@@ -4,11 +4,25 @@ $servername='127.0.0.1:3306';
 $name='root';
 $pass='b0518ae66817b1445350179bfb2660a2065daa34703d56c0';
 ini_set('display_errors', 1);
-$conn = new mysqli($servername, $name, $pass);
+$conn = new mysqli($servername, $name, $pass, 'logins');
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-  echo "Connected successfully";
+echo "Connected successfully";
+
+$sql = "SELECT * FROM user_info";
+
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+  // output data of each row
+  while($row = $result->fetch_assoc()) {
+    echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+  }
+} else {
+  echo "0 results";
+}
+$conn->close();
 
 // if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -22,5 +36,3 @@ if ($conn->connect_error) {
 //     }
 // }
 ?>
-
-
