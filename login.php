@@ -21,7 +21,7 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
     echo "username: " . $row["username"]. " - password: " . $row["password"]. "<br>";
   }
-  header('Location: http://165.227.98.100/classes.html');
+  
 } else {
   echo "0 results";
 }
