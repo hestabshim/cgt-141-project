@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $name="username";
 $pass="password";
 

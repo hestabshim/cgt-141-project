@@ -1,34 +1,39 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
+
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
 	<title>landing page </title>
 	<meta http-equiv="Content-Language" content="en-us" />
-		
+
 	<meta name="description" content="Description" />
 	<meta name="keywords" content="Keywords" />
-	
-	<style type="text/css" media="all"> @import "CSS/master.css"; </style>
-	
+
+	<style type="text/css" media="all">
+		@import "CSS/master.css";
+		@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+	</style>
+
 </head>
 
 ^_^
 <body>
 	<div class="page-container">
-		<div class="card"> 
+		<div class="card center font">
 			<h1> Log in </h1>
 
 			<form name="loginform" action="login.php" method="post">
-				
-				Username: <input type="text" name="username"><br>
-				Password: <input type="text" name="password"><br>
-	
-				<input type="Submit" value="Enter"/>
-			</form>
 
+				<label>Username: </label><input type="text" name="username" required><br>
+				<label>Password: </label><input type="text" name="password" required><br>
+
+				<input type="Submit" value="Enter" />
+			</form>
 			
+
 		</div>
 	</div>
 </body>
+
 </html>

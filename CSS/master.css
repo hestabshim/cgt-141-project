@@ -1,12 +1,18 @@
-.center{
-    
-}
+
 .card {
     background-color: #e7e6e6;
     width: 350px;
     height: 300px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 30px;
+}
+.center {
+    line-height: 1.5;
+    height: 300px;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .container {
@@ -15,6 +21,9 @@
 
     border-radius: 0px 0px 30px 30px;
     height: 25%;
+}
+.font {
+    font-family: Lato;
 }
 
 .card-set {
