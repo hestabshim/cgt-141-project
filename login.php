@@ -10,7 +10,7 @@ $conn = new mysqli($servername, $name, $pass, 'logins');
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }else{
-$stmt = $conn->prepare("insert into logins(username, password)
+$stmt = $conn->prepare("insert into user_info(username, password)
 values(?,?)");
 $stmt->bind_param("ss",$username, $password);
 $stmt->execute();
