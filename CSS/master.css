@@ -1,6 +1,6 @@
 
 .card {
-    background-color: #e7e6e6;
+    background-color: #cfb991;
     width: 350px;
     height: 300px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -120,6 +120,7 @@ body {font-family: Arial;}
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
+  margin: 20px;
 }
 
 .tab button {
