@@ -10,13 +10,9 @@ $conn = new mysqli($servername, $name, $pass, 'logins');
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }else{
-$stmt = $conn->prepare("insert into user_info(username, password)
-values(?,?)");
-$stmt->bind_param("ss",$username, $password);
-$stmt->execute();
-echo "Registration Successful";
+echo "Connection Successful";
 }
-echo "Connected successfully" . "<br>";
+;
 
 $sql = "SELECT * FROM user_info";
 
