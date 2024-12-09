@@ -16,5 +16,5 @@ if ($conn->connect_error) {
 $sql= "INSERT INTO user_info VALUES ('$email', '$password')";
 if(mysqli_query($conn, $sql)){
     echo "<h3> Registration successful.";
-    "<a href='index.html'> Return to login page </a>";
+    echo "<a href='index.html'> Return to login page </a>";
 }
