@@ -12,17 +12,17 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $password = $_POST['password'];
 
     if (!empty($email) && !empty($password) && !is_numeric($email)) {
-        global $con;
+        
         //save to database
         $user_id = random_num(20);
         $query = "insert into users (user_id,email,password) values ('$user_id','$email','$password')";
         
-        mysqli_connect($con, $query);
+        mysqli_connect($servername, $query);
         header("Location: login.php");
         die;
     } else {
         echo "Please enter some valid information!";
     }
 }
-mysqli_close($conn);
+mysqli_close($con);
 ?>
