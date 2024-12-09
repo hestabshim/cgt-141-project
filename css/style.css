@@ -4,9 +4,19 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16pt;
-  background-color: #c4bfc0;
+  background-color: #C4BFC0;
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  }
+
+#go-to-top {
+  font-size: 16px;
+  margin: 0px 0px 20px 0px;
+  text-align: center;
 }
 
 
@@ -19,8 +29,14 @@ h1 {
   margin: 20px;
 }
 
+h1 img {
+  float: right;
+  margin-right: 20px;
+  max-height: 50px;
+}
+
 #sidebar {
-  background-color: #505050;
+  background-color: #8E6F3E;
   height: 40px;
   width: 100vw;
 }
@@ -29,8 +45,8 @@ h1 {
   height: 40px;
   width: 10vw;
   overflow: hidden;
-  border: 3px solid #505050;
-  background-color: #f1f1f1;
+  border: 3px solid #8E6F3E;
+  background-color: #e7e6e6;
   float: left;
   margin-left: 20px;
   transition-property: width, font-size;
@@ -43,7 +59,7 @@ h1 {
 
 /* Changes color of + expands menu buttons on hover*/
 #sidebar button:hover {
-  background-color: #f5f855;
+  background-color: #DDB945;
   font-size: 19px;
   width: 11vw;
 }
@@ -70,11 +86,15 @@ h1 {
 }
 
 .card {
-  background-color: #e7e6e6;
+  background-color: #9D9795;
   width: 23vw;
   max-height: 300px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 30px;
+}
+
+.card img {
+  border-radius: 0;
 }
 
 .wrap {
@@ -118,7 +138,7 @@ h4 {
 #announce-title {
   font-weight: bold;
   font-size: 24px;
-  background-color: #a2a2a2;
+  background-color: #9D9795;
   min-height: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 30px;
@@ -127,7 +147,7 @@ h4 {
 }
 
 .announcement-card {
-  background-color: #a2a2a2;
+  background-color: #9D9795;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 30px;
   margin: auto auto 20px auto;
@@ -139,37 +159,6 @@ h2 {
   font-weight: bold;
   margin: 10px;
 }
-
-
-/* Not used anywhere*/
-
-/*
-
-.center {
-  line-height: 1.5;
-  height: 300px;
-  margin: auto;
-  width: 50%;
-  text-align: center;
-  vertical-align: middle;
-}
-
-h5 {
-  font-size: 12px;
-}
-
-#content {
-  padding-left: 30px;
-  float: left;
-  margin-left: 450px;
-  margin-top: 200px;
-  background: #cfb991;
-  width: 450px;
-  Height: 200px;
-  border-radius: 25px;
-}
-
-*/
 
 
 /*index.html style, in order of usage*/
@@ -194,7 +183,8 @@ h5 {
 .assignment-months h3.month {
   font-size: 40px;
   text-align: center;
-  border-bottom: 1px solid #b1b1b1;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #9D9795;
 }
 
 .assignment-months .assignment {
@@ -205,13 +195,13 @@ h5 {
 }
 
 .assignment .due-date {
-  background: #222222;
+  background: #8E6F3E;
   min-width: 10vw;
   max-width: 10vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #eeeeee;
+  color: #e7e6e6;
   padding: 8px 48px;
   font-weight: bold;
   text-align: center;
@@ -229,7 +219,7 @@ h5 {
 .assignment .assign-desc h3.assign-title {
   font-size: 24px;
   margin: 24px 0 10px 0;
-  color: #218bbb;
+  color: #8E6F3E;
   text-transform: uppercase;
 }
 
@@ -240,7 +230,7 @@ h5 {
 }
 
 .assignment .assign-desc .due-time {
-  background: #fff8ba;
+  background: #e7e6e6;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -249,6 +239,7 @@ h5 {
   border-radius: 16px;
   margin: 24px 0;
   font-size: 14px;
+  color: #555960;
 }
 
 @media (max-width: 550px) {
@@ -269,7 +260,7 @@ h5 {
 
 
 .assignment .assign-desc .submitted-at {
-  background: #fff8ba;
+  background: #e7e6e6;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -278,6 +269,7 @@ h5 {
   border-radius: 16px;
   margin: 24px 0;
   font-size: 14px;
+  color: #555960;
 }
 
 .assignment .assign-desc .submitted-at img {
