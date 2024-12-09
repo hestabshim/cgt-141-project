@@ -7,7 +7,7 @@ $pass='b0518ae66817b1445350179bfb2660a2065daa34703d56c0';
 $email= $_REQUEST["email"];
 $password= $_REQUEST["password"];
 // displays errors
-ini_set(`display_errors`, 1);
+ini_set('display_errors', 1);
 
 $conn = new mysqli($servername, $name, $pass, 'logins');
 if ($conn->connect_error) {
