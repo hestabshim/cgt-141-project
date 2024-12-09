@@ -1,5 +1,6 @@
 <?php
 session_start();
+ini_set('display_errors', 1);
 
 function check_login($con)
 {
@@ -42,7 +43,6 @@ function random_num($length)
 
     return $text;
 }
-$con=mysqli_connect();
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     //something was posted
