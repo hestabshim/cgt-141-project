@@ -2,10 +2,10 @@
 session_start();
 include ("connection.php");
 ini_set('display_errors', 1);
-global $con;
 function check_login($con)
 {
-   
+    global $con;
+
 
     if (isset($_SESSION['user_id'])) {
 
@@ -46,6 +46,7 @@ function random_num($length)
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     //something was posted
+    global $con;
     $email = $_POST['email'];
     $password = $_POST['password'];
 
@@ -55,7 +56,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $user_id = random_num(20);
         $query = "insert into users (user_id,email,password) values ('$user_id','$email','$password')";
         
-
         mysqli_query($con, $query);
 
         header("Location: login.php");
