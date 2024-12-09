@@ -19,6 +19,14 @@ html {
   text-align: center;
 }
 
+a.resource {
+  color: #DDB945
+}
+
+a:hover {
+  color: #8E6F3E
+}
+
 
 /* Sidebar, universal, used in all*/
 
@@ -33,6 +41,14 @@ h1 img {
   float: right;
   margin-right: 20px;
   max-height: 50px;
+  transition-property: max-height, width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+h1 img:hover {
+  max-height: 55px;
+  width: auto;
 }
 
 #sidebar {
@@ -108,6 +124,7 @@ h1 img {
   width: inherit;
   border-radius: 0px 0px 30px 30px;
   height: 25%;
+  overflow: auto;
 }
 
 h4 {
@@ -276,4 +293,55 @@ h2 {
   width: 25px;
   height: auto;
   padding-right: 8px;
+}
+
+
+/*resources.html style, in order of usage*/
+
+
+#main-links-body {
+  height: auto;
+  width: 100vw;
+  vertical-align: middle;
+  justify-content: center;
+  display: inline-flex;
+  flex-direction: row;
+  margin: auto;
+  padding-top: 20px;
+}
+
+#resources-img img {
+  min-height: auto;
+  max-height: 600px;
+  width: 25vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  margin-left: 50px;
+}
+
+#important-links {
+  max-height: 620px;
+  width: 25vw;
+  font-family: "Roboto", sans-serif;
+}
+
+#links-title {
+  font-weight: bold;
+  font-size: 24px;
+  background-color: #9D9795;
+  min-height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  margin: auto auto 20px auto;
+  padding: 10px;
+  overflow: auto;
+}
+
+#links-card {
+  background-color: #9D9795;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  margin: auto auto 20px auto;
+  padding: 10px;
+  overflow: auto;
 }
