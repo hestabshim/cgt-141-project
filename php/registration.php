@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         
         //save to database
         $user_id = random_num(20);
-        $query = "insert into users (user_id,email,password) values ('$user_id','$email','$password')";
+        $query = "insert into user_info (user_id,email,password) values ('$user_id','$email','$password')";
         
         mysqli_query ($con, $query);
         header("Location: login.php");
