@@ -4,6 +4,7 @@ session_start();
 include("connection.php");
 include("functions.php");
 $user_data=check_login($con);
+ini_set('display_errors', value: 1);
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     //something was posted
@@ -24,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 if ($user_data['password'] === $password) {
 
                     $_SESSION['user_id'] = $user_data['user_id'];
-                    header("Location: classes.html");
+                    header("Location: ../classes.html");
                     die;
                 }
             }
