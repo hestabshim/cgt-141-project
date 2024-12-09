@@ -263,3 +263,25 @@ h5 {
     padding: 10px 0;
   }
 }
+
+
+/*grades.html style, in order of usage*/
+
+
+.assignment .assign-desc .submitted-at {
+  background: #fff8ba;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  padding: 8px;
+  border-radius: 16px;
+  margin: 24px 0;
+  font-size: 14px;
+}
+
+.assignment .assign-desc .submitted-at img {
+  width: 25px;
+  height: auto;
+  padding-right: 8px;
+}
