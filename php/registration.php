@@ -1,30 +1,67 @@
 <?php
 session_start();
 
-	include("connection.php");
-	include("functions.php");
+include("connection.php");
+include("functions.php");
+function check_login()
+{
+    global $con;
 
+    if (isset($_SESSION['user_id'])) {
 
-	if($_SERVER['REQUEST_METHOD'] == "POST")
-	{
-		//something was posted
-		$email = $_POST['email'];
-		$password = $_POST['password'];
+        $id = $_SESSION['user_id'];
+        $query = "select * from users where user_id = '$id' limit 1";
 
-		if(!empty($email) && !empty($password) && !is_numeric($email))
-		{
+        $result = mysqli_query($con, $query);
+        if ($result && mysqli_num_rows($result) > 0) {
 
-			//save to database
-			$user_id = random_num(20);
-			$query = "insert into users (user_id,email,password) values ('$user_id','$email','$password')";
+            $user_data = mysqli_fetch_assoc($result);
+            return $user_data;
+        }
+    }
 
-			$db=mysqli_query($con, $query);
+    //redirect to login
+    header("Location: login.php");
+    die;
 
-			header("Location: login.php");
-			die;
-		}else
-		{
-			echo "Please enter some valid information!";
-		}
-	}
+}
+
+function random_num($length)
+{
+
+    $text = "";
+    if ($length < 5) {
+        $length = 5;
+    }
+
+    $len = rand(4, $length);
+
+    for ($i = 0; $i < $len; $i++) {
+        # code...
+
+        $text .= rand(0, 9);
+    }
+
+    return $text;
+}
+
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    //something was posted
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    if (!empty($email) && !empty($password) && !is_numeric($email)) {
+
+        //save to database
+        $user_id = random_num(20);
+        $query = "insert into users (user_id,email,password) values ('$user_id','$email','$password')";
+
+        $db = mysqli_query($con, $query);
+
+        header("Location: login.php");
+        die;
+    } else {
+        echo "Please enter some valid information!";
+    }
+}
 ?>
