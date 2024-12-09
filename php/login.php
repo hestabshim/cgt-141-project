@@ -4,6 +4,7 @@ session_start();
 include("connection.php");
 include("functions.php");
 $user_data=check_login($con);
+
 ini_set('display_errors', value: 1);
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
@@ -15,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
         //read from database
         $query = "select * from user_info where email = '$email' limit 1";
-        $result = mysqli_query($conn, $query);
+        $result = mysqli_query($con, $query);
 
         if ($result) {
             if ($result && mysqli_num_rows($result) > 0) {
