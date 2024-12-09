@@ -6,6 +6,7 @@ ini_set('display_errors', 1);
 
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    global $conn;
     //something was posted
     $email = $_POST['email'];
     $password = $_POST['password'];
