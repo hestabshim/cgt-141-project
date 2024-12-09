@@ -1,26 +1,9 @@
 <?php
 session_start();
 include ("connection.php");
+include ("functions.php");
 ini_set('display_errors', 1);
 
-function random_num($length)
-{
-
-    $text = "";
-    if ($length < 5) {
-        $length = 5;
-    }
-
-    $len = rand(4, $length);
-
-    for ($i = 0; $i < $len; $i++) {
-        # code...
-
-        $text .= rand(0, 9);
-    }
-
-    return $text;
-}
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     //something was posted
@@ -32,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         //save to database
         $user_id = random_num(20);
         $query = "insert into users (user_id,email,password) values ('$user_id','$email','$password')";
-        
+        mysqli_connect($con, $query);
         header("Location: login.php");
         die;
     } else {
