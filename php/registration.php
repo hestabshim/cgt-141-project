@@ -25,7 +25,7 @@ function check_login($con)
     die;
 
 }
-var_dump("$con");
+var_dump($con);
 function random_num($length)
 {
 
