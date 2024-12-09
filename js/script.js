@@ -6,7 +6,5 @@ function validateForm() {
     }
     if(x == "Purdue") {
         return true;
-        
     }
-  }
-  
+  };
