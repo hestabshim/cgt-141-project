@@ -57,12 +57,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $query = "insert into users (user_id,email,password) values ('$user_id','$email','$password')";
         
 
-        $db = mysqli_query($con, $query);
+        mysqli_query($con, $query);
 
         header("Location: login.php");
         die;
     } else {
         echo "Please enter some valid information!";
+        mysqli_error($con);
     }
 }
 ?>
