@@ -2,7 +2,7 @@
 session_start();
 include ("connection.php");
 ini_set('display_errors', 1);
-
+global $con;
 function check_login($con)
 {
    
@@ -25,7 +25,6 @@ function check_login($con)
     die;
 
 }
-var_dump($con);
 function random_num($length)
 {
 
