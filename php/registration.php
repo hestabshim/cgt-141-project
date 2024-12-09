@@ -1,5 +1,6 @@
 <?php
 session_start();
+include ("connection.php");
 ini_set('display_errors', 1);
 
 function check_login($con)
