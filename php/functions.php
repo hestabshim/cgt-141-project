@@ -1,7 +1,8 @@
 <?php
 
-function check_login($con)
+function check_login()
 {
+    global $con;
 
 	if(isset($_SESSION['user_id']))
 	{
