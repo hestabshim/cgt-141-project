@@ -1,6 +1,4 @@
 <?php
-// define variables
-
 session_start();
 
 	include("connection.php");
@@ -13,7 +11,7 @@ session_start();
 		$email = $_POST['email'];
 		$password = $_POST['password'];
 
-		if(!empty($email) && !empty($password) && !is_numeric($user_id))
+		if(!empty($email) && !empty($password) && !is_numeric($email))
 		{
 
 			//save to database
