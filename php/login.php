@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
         //read from database
         $query = "select * from user_info where email = '$email' limit 1";
-        $result = mysqli_query($con, $query);
+        $result = mysqli_query($conn, $query);
 
         if ($result) {
             if ($result && mysqli_num_rows($result) > 0) {
@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 if ($user_data['password'] === $password) {
 
                     $_SESSION['user_id'] = $user_data['user_id'];
-                    header("Location: index.php");
+                    header("Location: classes.html");
                     die;
                 }
             }

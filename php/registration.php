@@ -1,7 +1,7 @@
 <?php
 session_start();
-include ("connection.php");
-include ("functions.php");
+include("connection.php");
+include("functions.php");
 ini_set('display_errors', 1);
 
 
@@ -15,12 +15,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         //save to database
         $user_id = random_num(20);
         $query = "insert into users (user_id,email,password) values ('$user_id','$email','$password')";
-        mysqli_connect($con, $query);
+        mysqli_connect($conn, $query);
         header("Location: login.php");
         die;
     } else {
         echo "Please enter some valid information!";
     }
 }
-mysqli_close($con);
+mysqli_close($conn);
 ?>
