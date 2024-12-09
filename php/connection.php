@@ -8,6 +8,4 @@ ini_set('display_errors', value: 1);
 $con = new mysqli($servername, $name, $pass, 'logins');
 if ($con->connect_error) {
     die("Connection failed: " . $con->connect_error);
-} else {
-    echo "Connection Successful";
 }

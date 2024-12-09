@@ -34,5 +34,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         echo "wrong username or password!";
     } else {
         echo "wrong username or password!";
+        header("Location: ../index.html");
     }
 }
