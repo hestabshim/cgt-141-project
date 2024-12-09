@@ -1,0 +1,279 @@
+/*Universal, used in all*/
+
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16pt;
+  background-color: #C4BFC0;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  }
+
+#go-to-top {
+  font-size: 16px;
+  margin: 0px 0px 20px 0px;
+  text-align: center;
+}
+
+
+/* Sidebar, universal, used in all*/
+
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30pt;
+  margin: 20px;
+}
+
+h1 img {
+  float: right;
+  margin-right: 20px;
+  max-height: 50px;
+}
+
+#sidebar {
+  background-color: #8E6F3E;
+  height: 40px;
+  width: 100vw;
+}
+
+#sidebar button {
+  height: 40px;
+  width: 10vw;
+  overflow: hidden;
+  border: 3px solid #8E6F3E;
+  background-color: #e7e6e6;
+  float: left;
+  margin-left: 20px;
+  transition-property: width, font-size;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  font-size: 17px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Changes color of + expands menu buttons on hover*/
+#sidebar button:hover {
+  background-color: #DDB945;
+  font-size: 19px;
+  width: 11vw;
+}
+
+
+/*classes.html style in order of usage*/
+
+
+#main-body {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: auto;
+  padding: 20px;
+}
+
+.card-set {
+  max-height: 600px;
+  width: 50vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+}
+
+.card {
+  background-color: #9D9795;
+  width: 23vw;
+  max-height: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+
+.card img {
+  border-radius: 0;
+}
+
+.wrap {
+  overflow: hidden;
+  height: 75%;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.container {
+  height: inherit;
+  width: inherit;
+  border-radius: 0px 0px 30px 30px;
+  height: 25%;
+}
+
+h4 {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  width: inherit;
+  font-family: "Roboto", sans-serif;
+}
+
+.subset {
+  font-size: 12px;
+}
+
+
+#announcement-set {
+  max-height: 620px;
+  width: 50vw;
+  text-align: center;
+  vertical-align: middle;
+  float: right;
+  justify-content: center;
+  overflow: auto;
+  font-family: "Roboto", sans-serif;
+  margin: 0px 0px 20px 20px;
+}
+
+#announce-title {
+  font-weight: bold;
+  font-size: 24px;
+  background-color: #9D9795;
+  min-height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  margin: auto auto 20px auto;
+  padding: 10px;
+}
+
+.announcement-card {
+  background-color: #9D9795;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  margin: auto auto 20px auto;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+
+/*index.html style, in order of usage*/
+
+
+.page-container {
+  width: auto;
+  height: 750px;
+  background-image: url(../images/perusall.png);
+}
+
+
+/*assignments.html style, in order of usage*/
+
+
+.assignment-months {
+  font-family: "Roboto", sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.assignment-months h3.month {
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #9D9795;
+}
+
+.assignment-months .assignment {
+  box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+  display: flex;
+  border-radius: 8px;
+  margin: 32px 0;
+}
+
+.assignment .due-date {
+  background: #8E6F3E;
+  min-width: 10vw;
+  max-width: 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e7e6e6;
+  padding: 8px 48px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px 0 0 8px;
+  font-size: 56px;
+}
+
+.assignment .assign-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 24px;
+}
+
+.assignment .assign-desc h3.assign-title {
+  font-size: 24px;
+  margin: 24px 0 10px 0;
+  color: #8E6F3E;
+  text-transform: uppercase;
+}
+
+.assignment .assign-desc .due-time img {
+  width: 25px;
+  height: auto;
+  padding-right: 8px;
+}
+
+.assignment .assign-desc .due-time {
+  background: #e7e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  padding: 8px;
+  border-radius: 16px;
+  margin: 24px 0;
+  font-size: 14px;
+  color: #555960;
+}
+
+@media (max-width: 550px) {
+  .assignment {
+    flex-direction: column;
+  }
+
+  .assignment .due-date {
+    border-radius: 8px 8px 0 0;
+    display: inline-block;
+    font-size: 24px;
+    padding: 10px 0;
+  }
+}
+
+
+/*grades.html style, in order of usage*/
+
+
+.assignment .assign-desc .submitted-at {
+  background: #e7e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  padding: 8px;
+  border-radius: 16px;
+  margin: 24px 0;
+  font-size: 14px;
+  color: #555960;
+}
+
+.assignment .assign-desc .submitted-at img {
+  width: 25px;
+  height: auto;
+  padding-right: 8px;
+}

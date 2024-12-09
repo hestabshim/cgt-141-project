@@ -1,64 +1,265 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
-	<title>landing page </title>
-	<meta http-equiv="Content-Language" content="en-us" />
-		
-	<meta name="description" content="Description" />
-	<meta name="keywords" content="Keywords" />
-	
-	<style type="text/css" media="all"> @import "CSS/master.css"; </style>
 
-	<body>
-		<h1>Purdue</h1>
-		<script src="javascript/main.js"></script>
-		<header>
-	  
-		</header>
-		<div id="sidebar">
-		  <button>
-			<h5>Classes</h5>
-		  </button>
-		  <button>
-			<h5>Calendar</h5>
-		  </button>
-		  <button>
-			<b>Assignments</b>
-		  </button>
-		  <button>
-			<h5>Grades</h5>
-		  </button>
-		</div>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Purdue Brightspace</title>
+  <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+  <link rel="shortcut icon" href="/images/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+  <link rel="manifest" href="/images/site.webmanifest" />
+  <style type="text/css" media="all">
+    @import "css/style.css";
+  </style>
 
-		<div class="tab">
-			<div id="className"><b>CGT 14100-001</b></div>
-			<div id="AssignmentName"><p>Project 1</p></div>
-			<div id="DueDate"><p>12/9/2024</p></div>
-		</div>
+</head>
 
-		<div class="tab">
-			<div id="className"><b>WGSS 28200-LC2</b></div>
-			<div id="AssignmentName"><p>Biography</p></div>
-			<div id="DueDate"><p>12/20/2024</p></div>
-		</div>
+<body>
+  <script src="js/script.js"></script>
+  
+  <h1>
+    Brightspace - Purdue University
+    <a href="https://www.purdue.edu/">
+      <img src="images/purdue.webp" alt="Purdue University logo" />
+    </a>
+  </h1>
 
-		<div class="tab">
-			<div id="className"><b>CGT 14100-001</b></div>
-			<div id="AssignmentName"><p>Lab 4</p></div>
-			<div id="DueDate"><p>1/9/2025</p></div>
-		</div>
+  <header>
+    <div id="sidebar">
+      <button class="tab-links" onclick="window.location.href='index.html';">Home</button>
+      <button class="tab-links" onclick="window.location.href='classes.html';">Classes</button>
+      <button class="tab-links" onclick="window.location.href='assignments.html';">To-Do</button>
+      <button class="tab-links" onclick="window.location.href='grades.html';">Grades</button>
+    </div>
+  </header>
+  
+  <div id="Assignments" class="tab-content">
 
-		<div class="tab">
-			<div id="className"><b>CGT 17208-002</b></div>
-			<div id="AssignmentName"><p>Exersize 01</p></div>
-			<div id="DueDate"><p>1/12/2025</p></div>
-		</div>
+    <div class="assignment-months">
 
-		<div class="tab">
-			<div id="className"><b>CGT 11800-013</b></div>
-			<div id="AssignmentName"><p>Essay</p></div>
-			<div id="DueDate"><p>1/15/2025</p></div>
-		</div>
-	</body>
+      <h3 class="month">September</h3>
+
+      <!--ASSIGNMENT 1-->
+
+      <div class="assignment">
+        <div class="due-date">2nd</div>
+
+        <div class="assign-desc">
+          <h3 class="assign-title">CGT 14100</h3>
+
+          <b>Web Development Assignment</b><br />
+          This is an assignment about web development...
+
+          <div class="due-time">
+            <img src="images/time.webp" alt="clock" /> 12:00 pm
+          </div>
+        </div>
+      </div>
+
+      <!--ASSIGNMENT 2-->
+
+      <div class="assignment">
+        <div class="due-date">13th</div>
+
+        <div class="assign-desc">
+          <h3 class="assign-title">CGT 14100</h3>
+
+          <b>Web Development Assignment</b><br />
+          This is an assignment about web development...
+
+          <div class="due-time">
+            <img src="images/time.webp" alt="clock" /> 11:59 pm
+          </div>
+        </div>
+      </div>
+
+      <h3 class="month">October</h3>
+
+      <!--ASSIGNMENT 3-->
+
+      <div class="assignment">
+        <div class="due-date">4th</div>
+
+        <div class="assign-desc">
+          <h3 class="assign-title">CGT 14100</h3>
+
+          <b>Web Development Assignment</b><br />
+          This is an assignment about web development...
+
+          <div class="due-time">
+            <img src="images/time.webp" alt="clock" /> 11:59 pm
+          </div>
+        </div>
+      </div>
+
+      <!--ASSIGNMENT 4-->
+
+      <div class="assignment">
+        <div class="due-date">7th</div>
+
+        <div class="assign-desc">
+          <h3 class="assign-title">CGT 14100</h3>
+
+          <b>Web Development Assignment</b><br />
+          This is an assignment about web development...
+
+          <div class="due-time">
+            <img src="images/time.webp" alt="clock" /> 12:00 pm
+          </div>
+        </div>
+      </div>
+
+      <!--ASSIGNMENT 5-->
+
+      <div class="assignment">
+        <div class="due-date">11th</div>
+
+        <div class="assign-desc">
+          <h3 class="assign-title">CGT 14100</h3>
+
+          <b>Web Development Assignment</b><br />
+          This is an assignment about web development...
+
+          <div class="due-time">
+            <img src="images/time.webp" alt="clock" /> 11:59 pm
+          </div>
+        </div>
+      </div>
+
+      <!--ASSIGNMENT 6-->
+
+      <div class="assignment">
+        <div class="due-date">25th</div>
+
+        <div class="assign-desc">
+          <h3 class="assign-title">CGT 14100</h3>
+
+          <b>Web Development Assignment</b><br />
+          This is an assignment about web development...
+
+          <div class="due-time">
+            <img src="images/time.webp" alt="clock" /> 11:59 pm
+          </div>
+        </div>
+      </div>
+
+      <h3 class="month">November</h3>
+
+      <!--ASSIGNMENT 7-->
+
+      <div class="assignment">
+        <div class="due-date">11th</div>
+
+        <div class="assign-desc">
+          <h3 class="assign-title">CGT 14100</h3>
+
+          <b>Web Development Assignment</b><br />
+          This is an assignment about web development...
+
+          <div class="due-time">
+            <img src="images/time.webp" alt="clock" /> 12:00 pm
+          </div>
+        </div>
+      </div>
+
+      <!--ASSIGNMENT 8-->
+
+      <div class="assignment">
+        <div class="due-date">22nd</div>
+
+        <div class="assign-desc">
+          <h3 class="assign-title">CGT 14100</h3>
+
+          <b>Web Development Assignment</b><br />
+          This is an assignment about web development...
+
+          <div class="due-time">
+            <img src="images/time.webp" alt="clock" /> 11:59 pm
+          </div>
+        </div>
+      </div>
+
+      <h3 class="month">December</h3>
+
+      <!--ASSIGNMENT 9-->
+
+      <div class="assignment">
+        <div class="due-date">1st</div>
+
+        <div class="assign-desc">
+          <h3 class="assign-title">CGT 14100</h3>
+
+          <b>Web Development Assignment</b><br />
+          This is an assignment about web development...
+
+          <div class="due-time">
+            <img src="images/time.webp" alt="clock" /> 12:00 pm
+          </div>
+        </div>
+      </div>
+
+      <!--ASSIGNMENT 10-->
+
+      <div class="assignment">
+        <div class="due-date">4th</div>
+
+        <div class="assign-desc">
+          <h3 class="assign-title">CGT 14100</h3>
+
+          <b>Web Development Assignment</b><br />
+          This is an assignment about web development...
+
+          <div class="due-time">
+            <img src="images/time.webp" alt="clock" /> 11:59 pm
+          </div>
+        </div>
+      </div>
+
+      <!--ASSIGNMENT 11-->
+
+      <div class="assignment">
+        <div class="due-date">9th</div>
+
+        <div class="assign-desc">
+          <h3 class="assign-title">CGT 14100</h3>
+
+          <b>Web Development Assignment</b><br />
+          This is an assignment about web development...
+
+          <div class="due-time">
+            <img src="images/time.webp" alt="clock" /> 10:00 am
+          </div>
+        </div>
+      </div>
+
+      <!--ASSIGNMENT 12-->
+
+      <div class="assignment">
+        <div class="due-date">13th</div>
+
+        <div class="assign-desc">
+          <h3 class="assign-title">CGT 14100</h3>
+
+          <b>Web Development Assignment</b><br />
+          This is an assignment about web development...
+
+          <div class="due-time">
+            <img src="images/time.webp" alt="clock" /> 11:59 pm
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="go-to-top">
+    <a href="#top">Go to top of page</a>
+  </div>
+
+</body>
+
+</html>

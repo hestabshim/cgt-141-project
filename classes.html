@@ -2,36 +2,41 @@
 <html lang="en">
 
 <head>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>brightspace redesign</title>
+  <title>Purdue Brightspace</title>
+  <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+  <link rel="shortcut icon" href="/images/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+  <link rel="manifest" href="/images/site.webmanifest" />
   <style type="text/css" media="all">
-    @import "CSS/master.css";
+    @import "css/style.css";
   </style>
 
 </head>
 
 <body>
-  <h1>Purdue</h1>
-  <script src="javascript/main.js"></script>
+
+  <script src="js/script.js"></script>
+  
+  <h1>
+    Brightspace - Purdue University
+    <a href="https://www.purdue.edu/">
+      <img src="images/purdue.webp" alt="Purdue University logo" />
+    </a>
+  </h1>
+
   <header>
-
+    <div id="sidebar">
+      <button class="tab-links" onclick="window.location.href='index.html';">Home</button>
+      <button class="tab-links" onclick="window.location.href='classes.html';">Classes</button>
+      <button class="tab-links" onclick="window.location.href='assignments.html';">To-Do</button>
+      <button class="tab-links" onclick="window.location.href='grades.html';">Grades</button>
+    </div>
   </header>
-  <div id="sidebar">
-    <button>
-      <h5>Classes</h5>
-    </button>
-    <button>
-      <h5>Calendar</h5>
-    </button>
-    <button>
-      <h5>Assignments</h5>
-    </button>
-    <button>
-      <h5>Grades</h5>
-    </button>
 
-  </div>
   <div id="main-body">
     <div class="card-set">
 
@@ -77,43 +82,64 @@
 
     </div>
 
-    <div class="announcement-set">
+    <div id="announcement-set">
+
+      <div id="announce-title">Announcements</div>
+
       <div class="announcement-card">
-        <h3> Announcements </h3>
-        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Per risus augue augue magnis lacinia. Morbi purus ornare
-          maecenas venenatis velit facilisi congue id elit. Eget lectus suscipit dui; libero nisl montes. Accumsan
-          vivamus non gravida felis gravida nostra. Sapien viverra elementum est integer purus per congue? Rutrum platea
-          nec pharetra curae taciti dui cursus finibus. Est montes in taciti libero suscipit ultrices platea facilisi
-          tortor. Augue efficitur eros ad vivamus iaculis eu.
-
-          Lacus phasellus dolor bibendum justo consequat quam dolor adipiscing. Metus diam nisi; leo ullamcorper
-          consequat aptent. Cras ante potenti vulputate orci condimentum parturient ipsum. Rutrum massa pulvinar
-          malesuada; platea penatibus praesent. Ligula feugiat fringilla euismod in posuere. Nascetur erat suscipit nisi
-          convallis conubia. Morbi pulvinar ligula accumsan nisi orci cras. Lacinia felis etiam netus hendrerit
-          tincidunt primis venenatis fermentum. Senectus praesent commodo netus turpis viverra eleifend. Tristique
-          penatibus turpis porttitor volutpat litora aenean primis.
-
-          Litora imperdiet urna pellentesque ultrices maximus. Eleifend convallis sagittis hendrerit amet vestibulum dis
-          libero. Odio senectus placerat etiam magnis massa senectus dignissim. Massa curabitur phasellus mauris,
-          phasellus penatibus vulputate nisl. Vitae egestas elit consectetur tristique varius vivamus placerat lectus.
-          Interdum dictum quisque auctor condimentum non sed bibendum ad rutrum. Suscipit semper pretium at penatibus
-          interdum semper porta. Morbi elementum lectus egestas; parturient auctor vitae orci tristique. Enim curabitur
-          netus convallis consequat viverra viverra consequat massa?
-
-          Rutrum sem neque dictum; vel id euismod. Mattis sed semper tincidunt interdum quam rhoncus vitae. Posuere
-          malesuada massa diam ligula mi gravida; laoreet iaculis elit. Porttitor erat rutrum cubilia efficitur mus
-          imperdiet gravida. Etiam cras a erat himenaeos, eleifend taciti porta. Tristique a fermentum rutrum cubilia
-          erat interdum gravida class. Ac vitae ligula consequat praesent nisl pharetra non class. Himenaeos dui a
-          lectus habitant netus vel tristique.
-
-          Porta faucibus maecenas accumsan euismod phasellus gravida. Vivamus elementum ultricies neque ac nibh nibh
-          lacinia ullamcorper libero. Lobortis diam maximus mollis nascetur feugiat platea suspendisse? Non feugiat
-          justo blandit rhoncus porta. Libero litora nisl venenatis; amet tellus aenean dui platea porttitor. Penatibus
-          porta ornare parturient, ligula pharetra urna. Curabitur molestie mus curabitur himenaeos arcu placerat.</p>
+        <h2>CGT 14100</h2>
+        Lorem ipsum odor amet, consectetuer adipiscing elit. Per risus augue augue magnis lacinia. Morbi purus ornare
+        maecenas venenatis velit facilisi congue id elit. Eget lectus suscipit dui; libero nisl montes. Accumsan
+        vivamus non gravida felis gravida nostra. Sapien viverra elementum est integer purus per congue? Rutrum platea
+        nec pharetra curae taciti dui cursus finibus. Est montes in taciti libero suscipit ultrices platea facilisi
+        tortor. Augue efficitur eros ad vivamus iaculis eu.
       </div>
+
+      <div class="announcement-card">
+        <h2>CGT 14100</h2>
+        Lacus phasellus dolor bibendum justo consequat quam dolor adipiscing. Metus diam nisi; leo ullamcorper
+        consequat aptent. Cras ante potenti vulputate orci condimentum parturient ipsum. Rutrum massa pulvinar
+        malesuada; platea penatibus praesent. Ligula feugiat fringilla euismod in posuere. Nascetur erat suscipit nisi
+        convallis conubia. Morbi pulvinar ligula accumsan nisi orci cras. Lacinia felis etiam netus hendrerit
+        tincidunt primis venenatis fermentum. Senectus praesent commodo netus turpis viverra eleifend. Tristique
+        penatibus turpis porttitor volutpat litora aenean primis.
+      </div>
+
+      <div class="announcement-card">
+        <h2>CGT 14100</h2>
+        Litora imperdiet urna pellentesque ultrices maximus. Eleifend convallis sagittis hendrerit amet vestibulum dis
+        libero. Odio senectus placerat etiam magnis massa senectus dignissim. Massa curabitur phasellus mauris,
+        phasellus penatibus vulputate nisl. Vitae egestas elit consectetur tristique varius vivamus placerat lectus.
+        Interdum dictum quisque auctor condimentum non sed bibendum ad rutrum. Suscipit semper pretium at penatibus
+        interdum semper porta. Morbi elementum lectus egestas; parturient auctor vitae orci tristique. Enim curabitur
+        netus convallis consequat viverra viverra consequat massa?
+      </div>
+
+      <div class="announcement-card">
+        <h2>CGT 14100</h2>
+        Rutrum sem neque dictum; vel id euismod. Mattis sed semper tincidunt interdum quam rhoncus vitae. Posuere
+        malesuada massa diam ligula mi gravida; laoreet iaculis elit. Porttitor erat rutrum cubilia efficitur mus
+        imperdiet gravida. Etiam cras a erat himenaeos, eleifend taciti porta. Tristique a fermentum rutrum cubilia
+        erat interdum gravida class. Ac vitae ligula consequat praesent nisl pharetra non class. Himenaeos dui a
+        lectus habitant netus vel tristique.
+      </div>
+
+      <div class="announcement-card">
+        <h2>CGT 14100</h2>
+        Porta faucibus maecenas accumsan euismod phasellus gravida. Vivamus elementum ultricies neque ac nibh nibh
+        lacinia ullamcorper libero. Lobortis diam maximus mollis nascetur feugiat platea suspendisse? Non feugiat
+        justo blandit rhoncus porta. Libero litora nisl venenatis; amet tellus aenean dui platea porttitor. Penatibus
+        porta ornare parturient, ligula pharetra urna. Curabitur molestie mus curabitur himenaeos arcu placerat.
+      </div>
+  
     </div>
 
   </div>
+
+  <div id="go-to-top">
+    <a href="#top">Go to top of page</a>
+  </div>
+  
 </body>
 
 </html>
