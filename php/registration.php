@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         die;
     } else {
         echo "Please enter some valid information!";
-        mysqli_error($con);
     }
 }
+mysqli_close($con);
 ?>
