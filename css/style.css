@@ -101,7 +101,19 @@ h1 img:hover {
   grid-template-rows: 1fr 1fr;
   gap: 15px;
 }
+.center{
+  position: absolute;
+  
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: auto;
+  height: 25vh;
+    text-align: center;
 
+}
 .card {
   background-color: #9D9795;
   width: 23vw;
@@ -110,7 +122,8 @@ h1 img:hover {
   border-radius: 30px;
 }
 
-.card img {
+
+.card-img {
   border-radius: 0;
 }
 
@@ -180,9 +193,14 @@ h2 {
 
 
 /*index.html style, in order of usage*/
-
-
-.page-container {
+.logo{
+  max-width: 15vw;
+  max-height: 15vw;
+}
+.login{
+  padding: 10px;
+}
+.page-container{
   width: auto;
   height: 750px;
   background-image: url(../images/perusall.png);
@@ -345,4 +363,7 @@ h2 {
   margin: auto auto 20px auto;
   padding: 10px;
   overflow: auto;
+}
+.tab-links{
+  font-size: 50%;
 }
