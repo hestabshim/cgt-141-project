@@ -12,3 +12,6 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 $sql="INSERT INTO 'user_info' VALUES ('$email', '$password')";
+if(mysqli_query($conn, $sql)){
+    echo "<h3> Registration successful.";
+}
