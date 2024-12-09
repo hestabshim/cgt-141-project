@@ -2,9 +2,9 @@
 session_start();
 
 include("connection.php");
-function check_login()
+function check_login(mysqli $con)
 {
-    global $con;
+   
 
     if (isset($_SESSION['user_id'])) {
 
@@ -54,6 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         //save to database
         $user_id = random_num(20);
         $query = "insert into users (user_id,email,password) values ('$user_id','$email','$password')";
+        global $con;
 
         $db = mysqli_query($con, $query);
 
