@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         if ($result) {
             if ($result && mysqli_num_rows($result) > 0) {
 
-                $email = mysqli_fetch_assoc($result);
+                $user_data = mysqli_fetch_assoc($result);
 
                 if ($user_data['password'] === $password) {
 
