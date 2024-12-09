@@ -6,17 +6,18 @@ ini_set('display_errors', 1);
 
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    global $conn;
+    
     //something was posted
     $email = $_POST['email'];
     $password = $_POST['password'];
 
     if (!empty($email) && !empty($password) && !is_numeric($email)) {
-
+        global $con;
         //save to database
         $user_id = random_num(20);
         $query = "insert into users (user_id,email,password) values ('$user_id','$email','$password')";
-        mysqli_connect($conn, $query);
+        
+        mysqli_connect($con, $query);
         header("Location: login.php");
         die;
     } else {
