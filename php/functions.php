@@ -19,7 +19,7 @@ function check_login($con)
 	}
 
 	//redirect to login
-	header("Location: ../index.html");
+	header("Location: index.html");
 	die;
 
 }
