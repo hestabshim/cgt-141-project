@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $query = "insert into user_info (user_id,email,password) values ('$user_id','$email','$password')";
         
         mysqli_query ($con, $query);
-        header("Location: login.php");
+        header("Location: login.html");
         die;
     } else {
         echo "Please enter some valid information!";
